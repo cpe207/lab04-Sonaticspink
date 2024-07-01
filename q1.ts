@@ -1,13 +1,11 @@
 function typeChecker(a: any, b: any) {
-  if(typeof(a) == typeof(b)){
-    if(typeof(a) == 'string'){
-      return "I LOVE YOU";
-    }
-    if(typeof(a) == 'number'){
-      return "655";
-    }
-  }
-  else return 'NOT MATCHED';
+  if (typeof a == "string" && typeof b == "string") {
+    return "I LOVE YOU";
+   }
+  else if (typeof a == "number" && typeof b == "number") {
+       return a+b;
+   }
+else return 'NOT MATCHED';
    
   
 }
